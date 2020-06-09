@@ -28,6 +28,6 @@ jobs:
         node-version: 12
         
     - name: install surge
-      run: npm install surge globally
+      run: npm install -g surge 
     - name: Run Surge
-      run: surge ./ http://hysterical-trip.surge.sh --token ${{secrets.Surge_Token}}
+      run: surge ./ bootcampwebsite.surge.sh --token ${{secrets.Surge_Token}}
